@@ -8,7 +8,8 @@ import seatData as seat
 print("--------Menu-----")
 print("1.")
 
-
+print("----Menu Again----")
+print("2.")
 
 
 
