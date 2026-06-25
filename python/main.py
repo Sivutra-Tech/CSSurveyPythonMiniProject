@@ -41,12 +41,12 @@ sci_fi_movie= [
 ]
 
 #User choose their favorite genre
-Genre= str(input("Choose your genre: "))
+Genre= str(input("Choose your genre: ")).lower()
 number= 0
 
 #User choose horror film
 horror= horror_movie
-if Genre.lower() == "horror":
+if Genre == "horror":
     print("here is the list of 10 horror movie")
     for i in horror_movie:
         number += 1
@@ -54,13 +54,13 @@ if Genre.lower() == "horror":
 
 #USer choose action movie
 action= action_movie
-if Genre.lower() == "action":
+if Genre == "action":
     print("here is the list of 10 action movie")
     for x in action_movie:
         number += 1
         print(f"{number}. {x}")
 fantasy= fantasy_movie
-if Genre.lower() == "fantasy":
+if Genre == "fantasy":
     print("here is the list of 10 fantasy movie")
     for y in fantasy_movie:
         number += 1
@@ -68,7 +68,7 @@ if Genre.lower() == "fantasy":
 
 #User choose romance movie
 romance= romance_movie
-if Genre.lower() == "romance":
+if Genre == "romance":
     print("here is the list of 10 romance movie")
     for z in romance_movie:
         number += 1
@@ -76,7 +76,7 @@ if Genre.lower() == "romance":
 
 #User choose scifi movie
 scifi= sci_fi_movie
-if Genre.lower() == "scifi":
+if Genre == "scifi":
     print("here is the list of 10 scifi movie")
     for v in sci_fi_movie:
         number += 1
