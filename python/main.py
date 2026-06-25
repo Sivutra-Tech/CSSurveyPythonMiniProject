@@ -10,6 +10,13 @@ functions.printGenres(movie.getGenre())
 
 functions.printSeat(seat.getSeat())
 
+print ("Here is the list of genre")
+genre= ["horror", "action", "fantasy", "romance", "scifi"]
+number= 0
+for movie in genre:
+    number+= 1
+    print(f"{number}. {movie}")
+
 horror_movie= [
     "The conjuring","IT","The Exorcist", "The shining", "Halloween",
     "The ring", "Insidious", "Sinister", "The Texas chainsaw man", "Evil Dead"
