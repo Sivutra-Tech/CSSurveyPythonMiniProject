@@ -1,10 +1,10 @@
-import functions as fun
+import functions
 
 
 #Pick Genre
 
 listOfGenres = ["Romantic","Action","Horror","Sci-Fi","Fantasy"]
-fun.printGenres(listOfGenres)
+functions.printGenres(listOfGenres)
 
 # Printing Seats
 allOfTheSeat = [
@@ -21,7 +21,7 @@ allOfTheSeat = [
 ]
 
 
-fun.printSeat(allOfTheSeat)
+functions.printSeat(allOfTheSeat)
 
 horror_movie= [
     "The conjuring","IT","The Exorcist", "The shining", "Halloween",
@@ -43,6 +43,7 @@ sci_fi_movie= [
     "Interstellar", "Blade Runner 2049", "The Thing", "Real Steel", "The Doctor",
     "Space Odyssey", "Planet of the Apes", "Alien", "Back to the Future", "Star Wars: The Empire Strikes Back"
 ]
+
 Genre= str(input("Choose your genre: "))
 horror= horror_movie
 number= 0
