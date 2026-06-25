@@ -3,6 +3,17 @@ import movieData as movie
 import seatData as seat
 
 
+#Making a Menu (Test)
+
+print("--------Menu-----")
+print("1.")
+
+
+
+
+
+
+
 #Pick Genre
 
 functions.printGenres(movie.getGenre())
