@@ -1,15 +1,10 @@
-#Pick Genre
-def addGenres(listOfGenres, whatToBeAdded):
-  listOfGenres.append(whatToBeAdded)
+import functions as fun
 
-def printGenres(listOfGenres):
-  num = 1
-  for genre in listOfGenres:
-    print(f"{num}. {genre} ")
-    num+=1
+
+#Pick Genre
 
 listOfGenres = ["Romantic","Action","Horror","Sci-Fi","Fantasy"]
-printGenres(listOfGenres)
+fun.printGenres(listOfGenres)
 
 # Printing Seats
 allOfTheSeat = [
@@ -25,16 +20,5 @@ allOfTheSeat = [
     [1,2,3,4,5,6,7,8,9,10], #J
 ]
 
-def printSeat():
-  letter = ["A","B","C","D","E","F","G","H","I","J"]
-  tempNumLetter = 0
-  for row in allOfTheSeat:
-    print(f"{letter[tempNumLetter]}: ", end="")
-    for colum in row:
-      print(f"[{colum}]", end=" ")
-    print("\n")
-    tempNumLetter+=1
-def pickSeat(row,colum):
-    pass
 
-printSeat()
+fun.printSeat()
