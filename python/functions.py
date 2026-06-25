@@ -7,7 +7,7 @@ def printGenres(listOfGenres):
     print(f"{num}. {genre} ")
     num+=1
     
-def printSeat():
+def printSeat(allOfTheSeat):
   letter = ["A","B","C","D","E","F","G","H","I","J"]
   tempNumLetter = 0
   for row in allOfTheSeat:
