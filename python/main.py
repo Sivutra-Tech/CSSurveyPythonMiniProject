@@ -35,6 +35,6 @@ def printSeat():
     print("\n")
     tempNumLetter+=1
 def pickSeat(row,colum):
-
+    pass
 
 printSeat()
