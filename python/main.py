@@ -4,16 +4,7 @@ import seatData as seat
 
 
 #Making a Menu (Test)
-
-print("--------Menu-----")
-print("1.")
-
-print("----Menu Again----")
-print("2.")
-
-
-
-print ("halo")
+functions.printSeat()
 
 
 #Pick Genre
@@ -54,42 +45,39 @@ sci_fi_movie= [
 ]
 
 #User choose their favorite genre
-Genre= str(input("Choose your genre: ")).lower()
+Genre= int(input("Choose your genre: "))
 number= 0
 
 #User choose horror film
-horror= horror_movie
-if Genre == "horror":
+if Genre == "1":
     print("here is the list of 10 horror movie")
     for i in horror_movie:
         number += 1
         print(f"{number}. {i}")
 
-#USer choose action movie
-action= action_movie
-if Genre == "action":
+#User choose action movie
+if Genre == "2":
     print("here is the list of 10 action movie")
     for x in action_movie:
         number += 1
         print(f"{number}. {x}")
-fantasy= fantasy_movie
-if Genre == "fantasy":
+
+#User choose fantasy movie
+if Genre == "3":
     print("here is the list of 10 fantasy movie")
     for y in fantasy_movie:
         number += 1
         print(f"{number}. {y}")
 
 #User choose romance movie
-romance= romance_movie
-if Genre == "romance":
+if Genre == "4":
     print("here is the list of 10 romance movie")
     for z in romance_movie:
         number += 1
         print(f"{number}. {z}")
 
 #User choose scifi movie
-scifi= sci_fi_movie
-if Genre == "scifi":
+if Genre == "5":
     print("here is the list of 10 scifi movie")
     for v in sci_fi_movie:
         number += 1
