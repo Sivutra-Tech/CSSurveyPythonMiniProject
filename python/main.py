@@ -5,23 +5,10 @@ import seatData as seat
 
 #Making a Menu (Test)
 
-print("--------Menu-----")
-print("1.")
-
-print("----Menu Again----")
-print("2.")
-
-
-
-print ("halo")
-
 
 #Pick Genre
 
-functions.printGenres(movie.getGenre())
 
-
-functions.printSeat(seat.getSeat())
 
 #List of 5 available movie genre
 print ("Here is the list of genre")
