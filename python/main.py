@@ -4,7 +4,7 @@ import seatData as seat
 
 
 #Making a Menu (Test)
-functions.printSeat()
+
 
 
 #Pick Genre
