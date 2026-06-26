@@ -7,7 +7,7 @@ import seatData as seat
 
 
 #Pick Genre
-
+print("something")
 
 
 #List of 5 available movie genre
