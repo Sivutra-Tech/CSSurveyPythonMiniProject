@@ -12,6 +12,8 @@ import seatData as seat
 print("something")
 
 
+print("Somethign Again")
+
 #List of 5 available movie genre
 print ("Here is the list of genre")
 genre= ["horror", "action", "fantasy", "romance", "scifi"]
