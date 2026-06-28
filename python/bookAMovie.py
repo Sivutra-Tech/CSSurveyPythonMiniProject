@@ -1,21 +1,8 @@
 from operator import truediv
 
-import functions
 import movieData
-import seatData as seat
 
-#Menu
-print("Menu")
-print("1. Book a Movie")
-print("2. Check Booking")
-print("3. Cancel Booking")
-print("4. Exit")
-
-userChoice = int(input("What would you like to do?: "))
-
-if userChoice == 4:
-    exit()
-elif userChoice == 1:
+def runBookAMovie():
     #List of 5 available movie genre
     print ("Here is the list of genre")
     genre= ["horror", "action", "fantasy", "romance", "scifi"]
@@ -189,7 +176,6 @@ elif userChoice == 1:
             if Showtime == "2":
                 SomeList.append(movie[3][5])
                 SomeList.append(movie[3][7])
-
     #User choose romance movie
     if Genre == "4":
         print ("Available Movies")
@@ -298,10 +284,8 @@ elif userChoice == 1:
             if Showtime == "2":
                 SomeList.append(movie[3][5])
                 SomeList.append(movie[3][7])
-
     print(SomeList)
-elif userChoice == 2:
-    print("Checking Booking")
 
-elif userChoice == 3:
-    print("Canceling Booking")
+
+
+
