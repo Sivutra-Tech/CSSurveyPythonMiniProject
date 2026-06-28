@@ -1,6 +1,7 @@
 from operator import truediv
 
 import movieData
+import seatData
 
 def runBookAMovie():
     #List of 5 available movie genre
@@ -284,6 +285,20 @@ def runBookAMovie():
             if Showtime == "2":
                 SomeList.append(movie[3][5])
                 SomeList.append(movie[3][7])
+    print(SomeList)
+
+    print("Available Seats")
+    
+    seatData.printSeat(seatData.getSeat())
+
+    userDesiredSeatRow = input("Which seat row do you prefer? (A-J) : ")
+    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+
+    seatData.bookSeat(userDesiredSeatRow,userDesiredSeatNumber)
+
+    SomeList.append(userDesiredSeatRow)
+    SomeList.append(userDesiredSeatNumber)
+
     print(SomeList)
 
 
