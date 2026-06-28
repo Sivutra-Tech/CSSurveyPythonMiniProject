@@ -1,0 +1,66 @@
+import seatData
+import functions
+import booking
+
+def runBooking(movie, chosenGenre):
+    result = None
+    redo = None
+
+    while True:  # genre/movie loop
+        while True:  # showtime loop
+
+            print(f"\n  Movie : {movie[2]}")
+            print(f"  1. {movie[4]} on {movie[6]}")
+            print(f"  2. {movie[5]} on {movie[7]}")
+
+            Showtime = input("Choose showtime (1-2, or 0 to pick movie again): ").strip()
+            if Showtime == "0":
+                return "repick_movie"
+            if Showtime not in ("1", "2"):
+                print("  Invalid choice. Try again.")
+                continue
+
+            chosenTime = movie[4] if Showtime == "1" else movie[5]
+            chosenDate = movie[6] if Showtime == "1" else movie[7]
+
+            while True:  # seat loop
+                functions.printSeat(seatData.getSeat())
+
+                seatRow = input("Choose seat row (A-J, or 0 to pick showtime again): ").strip().upper()
+                if seatRow == "0":
+                    break  # back to showtime loop
+                seatCol = input("Choose seat number (1-10): ").strip()
+
+                if seatRow not in "ABCDEFGHIJ" or not seatCol.isdigit() or not (1 <= int(seatCol) <= 10):
+                    print("  Invalid seat. Try again.")
+                    continue
+
+                # Confirmation
+                SomeList = [movie[2], chosenTime, chosenDate]
+                result = booking.confirmBooking(SomeList, seatRow, int(seatCol))
+
+                if result:
+                    return "done"  # booking complete
+
+                # User said no — ask what to redo
+                print("  What would you like to change?")
+                print("  1. Pick a different seat")
+                print("  2. Pick a different showtime")
+                print("  3. Pick a different movie")
+                print("  4. Pick a different genre")
+                redo = input("  Choice: ").strip()
+
+                if redo == "1":
+                    continue        # stay in seat loop
+                elif redo == "2":
+                    break           # back to showtime loop
+                elif redo == "3":
+                    return "repick_movie"
+                elif redo == "4":
+                    return "repick_genre"
+                else:
+                    continue
+
+            if redo == "2":
+                continue  # stay in showtime loop
+            break
