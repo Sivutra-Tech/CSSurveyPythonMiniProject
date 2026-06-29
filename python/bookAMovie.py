@@ -302,18 +302,10 @@ def runBookAMovie():
     print(SomeList)
 
 
-
+    # DONT DELETE
+    # This is making the tickiet.
     setComfirmationList(SomeList,"new")
-    print(getComfirmationList())
-
-    print("Setting ticket")
     ticket.generateTicket()
-
-    print("inserted")
-    print(getComfirmationList())
-
-
-
     
 
 import ticket
