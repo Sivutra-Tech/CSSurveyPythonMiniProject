@@ -1,5 +1,5 @@
 theater = "KonKhmerMovie"
-total = 
+total = 0
 
 print(" PAYMENT ")
 print("1. Visa / Mastercard")
