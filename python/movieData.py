@@ -9,7 +9,7 @@ def getMovie(genre):
         resultMovieList = []
         for row in data:
             if row[1] == genre:
-                print(row)
+
                 resultMovieList.append(row)
         
     return resultMovieList

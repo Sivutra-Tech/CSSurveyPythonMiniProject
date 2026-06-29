@@ -271,4 +271,25 @@ def runBookAMovie():
         else:
             print("Invalid Choice. Please enter 1-5.")
 
-runBookAMovie()
+        
+
+
+
+# DONT DELETE
+# DONT LOOP!!!!!
+# This is making the tickiet.
+#setComfirmationList(SomeList,"new")
+#ticket.generateTicket() 
+
+
+import ticket
+
+
+def setComfirmationList(someList,action=None):
+    if action== "new" or action =="update":
+        setComfirmationList.list = someList
+    if action == "getList":
+        return setComfirmationList.list
+
+def getComfirmationList():
+    return setComfirmationList(list(),action="getList")
