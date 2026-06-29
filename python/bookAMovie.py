@@ -303,4 +303,30 @@ def runBookAMovie():
 
 
 
+    setComfirmationList(SomeList,"new")
+    print(getComfirmationList())
+
+    print("Setting ticket")
+    ticket.generateTicket()
+
+    print("inserted")
+    print(getComfirmationList())
+
+
+
+    
+
+import ticket
+
+
+def setComfirmationList(someList,action=None):
+    if action== "new" or action =="update":
+        setComfirmationList.list = someList
+    if action == "getList":
+        return setComfirmationList.list
+
+def getComfirmationList():
+    return setComfirmationList(list(),action="getList")
+    
+
 
