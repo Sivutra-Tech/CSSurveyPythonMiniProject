@@ -1,6 +1,5 @@
 import movieData
 import seatData
-
 def runBookAMovie():
     # List of 5 available movie genre
     print("Here is the list of genre")
