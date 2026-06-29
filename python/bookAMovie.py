@@ -303,6 +303,7 @@ def runBookAMovie():
 
 
     # DONT DELETE
+    # DONT LOOP!!!!!
     # This is making the tickiet.
     setComfirmationList(SomeList,"new")
     ticket.generateTicket()
