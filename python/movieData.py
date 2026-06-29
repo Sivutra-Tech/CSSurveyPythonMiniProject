@@ -51,3 +51,21 @@ def printGenres(listOfGenres):
   for genre in listOfGenres:
     print(f"{num}. {genre} ")
     num+=1
+
+def print_available_movie (genre):
+    Number = 1
+    List = 0
+    MovieName = 2
+    MovieDuration = 3
+    MovieTime1 = 4
+    MovieTime2 = 5
+    MovieDate1 = 6
+    MovieDate2 = 7
+    print ("Available Movies: ")
+    print ("No. | Movie Name | Movie Duration | Movie Time1 on Movie Date1 | Movie Time2 on Movie Date2")
+    movie = getMovie(f"{genre}")
+    for i in movie:
+        print(
+            f"{Number}. {movie[List][MovieName]} | {movie[List][MovieDuration]} mins | {movie[List][MovieTime1]} on {movie[List][MovieDate1]} | {movie[List][MovieTime2]} on {movie[List][MovieDate2]}")
+        Number += 1
+        List += 1
