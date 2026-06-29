@@ -1,4 +1,0 @@
-
-
-def runCancelBooking():
-    pass
