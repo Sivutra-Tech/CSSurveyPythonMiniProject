@@ -18,7 +18,7 @@ def getMovie(genre):
 # Adding and Removing Movies
 import csv
 
-fileLocation = './python/data.csv'
+fileLocation = 'data.csv'
 
 def addMovie(MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,MovieDate1,MovieDate2):
     with open(fileLocation,"a") as movieData:

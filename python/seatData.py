@@ -13,7 +13,7 @@ def getFreshSeat():
     ]   
     return allOfTheSeat
 
-fileLocation = "./python/seat.csv"
+fileLocation = "seat.csv"
 import csv
 
 def setFreshSeat():
