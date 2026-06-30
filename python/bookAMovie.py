@@ -61,8 +61,9 @@ def runBookAMovie():
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
+                    setComfirmationList(SomeList,"new")
+                    ticket.generateTicket() 
 
-                    confirmation.runConfirmation(SomeList)
                     return
 
                 if HorrorMovieChoice == "0":
@@ -111,8 +112,9 @@ def runBookAMovie():
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
+                    setComfirmationList(SomeList,"new")
+                    ticket.generateTicket() 
 
-                    confirmation.runConfirmation(SomeList)
                     return
 
                 if ActionMovieChoice == "0":
@@ -161,8 +163,9 @@ def runBookAMovie():
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
+                    setComfirmationList(SomeList,"new")
+                    ticket.generateTicket() 
 
-                    confirmation.runConfirmation(SomeList)
                     return
 
                 if FantasyMovieChoice == "0":
@@ -211,8 +214,9 @@ def runBookAMovie():
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
+                    setComfirmationList(SomeList,"new")
+                    ticket.generateTicket() 
 
-                    confirmation.runConfirmation(SomeList)
                     return
 
                 if RomanceMovieChoice == "0":
@@ -261,25 +265,29 @@ def runBookAMovie():
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
+                    setComfirmationList(SomeList,"new")
+                    ticket.generateTicket() 
 
-                    confirmation.runConfirmation(SomeList)
                     return
 
                 if SciFiMovieChoice == "0":
                     break
 
+            
+
         else:
             print("Invalid Choice. Please enter 1-5.")
+        
+        
+
+    
 
         
 
 
 
-# DONT DELETE
-# DONT LOOP!!!!!
-# This is making the tickiet.
-#setComfirmationList(SomeList,"new")
-#ticket.generateTicket() 
+
+
 
 
 
