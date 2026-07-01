@@ -2,8 +2,7 @@ import movieData
 import seatData
 
 def runBookAMovie():
-    result = None
-    redo = None
+
     while True:  # genre loop
         SomeList = []
 
@@ -12,9 +11,11 @@ def runBookAMovie():
         movieData.printGenres(movieData.getGenre()) #1. Horror, 2.Action...., 5. Sci_Fi
         Genre = input("Choose your genre: ")
 
-        
+        if Genre not in ["1","2","3","4","5"]:
+            print("Invalid Choice. Please enter 1-5.")
+            continue
         # Horror
-        if Genre == "1":
+        elif Genre == "1":
             movie = movieData.getMovie("Horror")
             movieData.print_available_movie("Horror")
             while True:  # movie loop
@@ -341,8 +342,7 @@ def runBookAMovie():
 
             
 
-        else:
-            print("Invalid Choice. Please enter 1-5.")
+        
         
         
 
