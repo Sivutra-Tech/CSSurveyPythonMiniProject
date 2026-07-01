@@ -4,7 +4,7 @@ fileLocation = os.path.join(baseFileLocation,"data.csv")
 
 
 def getGenre():
-    listOfGenres = ["Romantic","Action","Horror","Sci-Fi","Fantasy"]
+    listOfGenres = ["Horror","Action","Fantasy","Romance","Sci_Fi"]
     return listOfGenres
 
 def getMovie(genre):
