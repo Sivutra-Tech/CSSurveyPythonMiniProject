@@ -22,7 +22,7 @@ fileLocation = "seat.csv"
 import csv
 
 def setFreshSeat():
-    with open(desiredWorkingDicectory,"w") as file:
+    with open(fileLocation,"w") as file:
         writer = csv.writer(file)
         writer.writerows(getFreshSeat())
 
@@ -52,7 +52,7 @@ def convertLetterToNumber(letter):
 def bookSeat(userDesiredSeatRow,userDesiredSeatNumber):
     userDesiredSeatRow = convertLetterToNumber(userDesiredSeatRow)
     userDesiredSeatNumber -= 1
-    with open(desiredWorkingDicectory,"r") as file:
+    with open(fileLocation,"r") as file:
         reader = csv.reader(file)
         rowCounter = 0
         listOfRow = []
@@ -61,12 +61,12 @@ def bookSeat(userDesiredSeatRow,userDesiredSeatNumber):
             if rowCounter == userDesiredSeatRow:
                 listOfRow[rowCounter][userDesiredSeatNumber] = "X"
             rowCounter+=1
-    with open(desiredWorkingDicectory,"w") as file:
+    with open(fileLocation,"w") as file:
         writer = csv.writer(file)
         writer.writerows(listOfRow)
 
 def getSeat():
-    with open(desiredWorkingDicectory,'r') as file:
+    with open(fileLocation,'r') as file:
         reader = csv.reader(file)
         allSeatList = []
         for row in reader:
