@@ -1,4 +1,4 @@
-Movie_ID,Movie_Genre,Movie_Name,Movie_Duration,Movie_Time_1,Movie_Time_2,Movie_Date_1,Movie_Date_2100002,Horror,IT,120,13:30,19:30,13-June-2026,15-June-2026
+Movie_ID,Movie_Genre,Movie_Name,Movie_Duration,Movie_Time_1,Movie_Time_2,Movie_Date_1,Movie_Date_2
 100001,Horror,The Conjuring,112,13:50,15:30,23-June-2026,30-June-2026
 100002,Horror,IT,135,14:50,16:30,24-June-2026,26-June-2026
 100003,Horror,The Exorcist,122,10:50,11:30,29-June-2026,30-June-2026
