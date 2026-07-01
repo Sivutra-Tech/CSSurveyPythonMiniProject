@@ -8,15 +8,11 @@ def runBookAMovie():
         SomeList = []
 
         # List of 5 available movie genre
-        print("Here is the list of genre")
-        genre = ["horror", "action", "fantasy", "romance", "scifi"]
-        num = 0
-        for number in genre:
-            num += 1
-            print(f"{num}. {number}")
-
+        
+        movieData.printGenres(movieData.getGenre()) #1. Horror, 2.Action...., 5. Sci_Fi
         Genre = input("Choose your genre: ")
 
+        
         # Horror
         if Genre == "1":
             movie = movieData.getMovie("Horror")
