@@ -1,3 +1,8 @@
+import os
+baseFileLocation = os.path.dirname(os.path.abspath(__file__))
+fileLocation = os.path.join(baseFileLocation,"seat.csv")
+
+
 def getFreshSeat():
     allOfTheSeat = [
     [1,2,3,4,5,6,7,8,9,10], #A (1.Num) (1.9 = A9)
@@ -17,7 +22,7 @@ fileLocation = "seat.csv"
 import csv
 
 def setFreshSeat():
-    with open(fileLocation,"w") as file:
+    with open(desiredWorkingDicectory,"w") as file:
         writer = csv.writer(file)
         writer.writerows(getFreshSeat())
 
@@ -47,7 +52,7 @@ def convertLetterToNumber(letter):
 def bookSeat(userDesiredSeatRow,userDesiredSeatNumber):
     userDesiredSeatRow = convertLetterToNumber(userDesiredSeatRow)
     userDesiredSeatNumber -= 1
-    with open(fileLocation,"r") as file:
+    with open(desiredWorkingDicectory,"r") as file:
         reader = csv.reader(file)
         rowCounter = 0
         listOfRow = []
@@ -56,12 +61,12 @@ def bookSeat(userDesiredSeatRow,userDesiredSeatNumber):
             if rowCounter == userDesiredSeatRow:
                 listOfRow[rowCounter][userDesiredSeatNumber] = "X"
             rowCounter+=1
-    with open(fileLocation,"w") as file:
+    with open(desiredWorkingDicectory,"w") as file:
         writer = csv.writer(file)
         writer.writerows(listOfRow)
 
 def getSeat():
-    with open(fileLocation,'r') as file:
+    with open(desiredWorkingDicectory,'r') as file:
         reader = csv.reader(file)
         allSeatList = []
         for row in reader:

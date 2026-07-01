@@ -294,6 +294,9 @@ def runBookAMovie():
 
 import ticket
 
+def validateInput(correctDataType,inputDataType):
+    pass
+
 
 def setComfirmationList(someList,action=None):
     if action== "new" or action =="update":
